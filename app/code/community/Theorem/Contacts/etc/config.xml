@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Theorem_Contacts>
+            <version>0.9.0</version>
+        </Theorem_Contacts>
+    </modules>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <theorem_contacts>
+                    <file>theorem/contacts.xml</file>
+                </theorem_contacts>
+            </updates>
+        </layout>
+
+        <translate>
+            <modules>
+                <theorem_contacts>
+                    <files>
+                        <default>Theorem_Contacts.csv</default>
+                    </files>
+                </theorem_contacts>
+            </modules>
+        </translate>
+
+        <routers>
+            <contacts>
+                <args>
+                    <modules>
+                        <Theorem_Contacts before="Mage_Contacts">Theorem_Contacts</Theorem_Contacts>
+                    </modules>
+                </args>
+            </contacts>
+        </routers>
+    </frontend>
+    
+    <adminhtml>
+        <translate>
+            <modules>
+                <theorem_contacts>
+                    <files>
+                        <default>Theorem_Contacts.csv</default>
+                    </files>
+                </theorem_contacts>
+            </modules>
+        </translate>
+    </adminhtml>
+        
+    <global>
+        <blocks>
+            <theorem_contacts>
+                <class>Theorem_Contacts_Block</class>
+            </theorem_contacts>
+        </blocks>
+    </global>
+</config>

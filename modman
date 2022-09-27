@@ -1,0 +1,4 @@
+app/design/frontend/base/default/layout/theorem/contacts.xml app/design/frontend/base/default/layout/theorem/contacts.xml
+app/design/frontend/base/default/template/theorem/contacts app/design/frontend/base/default/template/theorem/contacts
+app/code/community/Theorem/Contacts app/code/community/Theorem/Contacts
+app/etc/modules/Theorem_Contacts.xml app/etc/modules/Theorem_Contacts.xml
